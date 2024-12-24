@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello From EC2</h1>');
+  res.send('<h1>Hi From EC2</h1>');
 });
 
 app.get('/health', (req, res) => {
