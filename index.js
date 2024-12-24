@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
   res.send('<h1>Hello From EC2</h1>');
 });
 
+app.get('/health', (req, res) => {
+  res.send('Server is running');
+});
+
 const PORT = process.env.PORT || 8001;
 
 app.listen(PORT, () => {
