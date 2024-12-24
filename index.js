@@ -13,6 +13,10 @@ app.get('/health', (req, res) => {
   res.send('Server is running');
 });
 
+app.get('/api/v1', (req, res) => {
+  res.send('API v1');
+});
+
 const PORT = process.env.PORT || 8001;
 
 app.listen(PORT, () => {

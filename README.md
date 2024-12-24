@@ -61,3 +61,9 @@ ssh-add ~/.ssh/id_ed25519
 ```bash
 ssh -T github.com
 ```
+
+
+### PM2 Installation
+```bash
+npm install pm2 -g
+```
